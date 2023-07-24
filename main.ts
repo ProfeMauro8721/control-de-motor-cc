@@ -1,0 +1,10 @@
+basic.showIcon(IconNames.Happy)
+basic.pause(500)
+basic.forever(function () {
+    basic.showIcon(IconNames.Yes)
+    pins.digitalWritePin(DigitalPin.P0, 1)
+    basic.pause(5000)
+    basic.showIcon(IconNames.No)
+    pins.digitalWritePin(DigitalPin.P0, 0)
+    basic.pause(5000)
+})
